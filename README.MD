@@ -18,8 +18,9 @@ You need to install the following dependencies on your system:
 - `waybar` the taskbar
 - `wofi` the application launcher.
 - I use the `kitty` terminal too, but you do you.
+- Font used is MartianMono Nerd Font, which you can install with `nerdfonts`
 
-On arch, you can install some of the above with `sudo pacman -S hyprland nemo waybar wofi kitty`, installing `eww` has to
+On arch, you can install some of the above with `sudo pacman -S hyprland nemo waybar wofi kitty`, installing `eww` and `nerdfonts` has to
 be done separately, easiest way is from the AUR with yay.
 
 To install, copy all the folders in the `config` directory, to the `~/.config` directory on your system; make sure to backup your previous configs if you have them.
