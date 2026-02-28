@@ -1,7 +1,7 @@
 # Frutiger ego
 
 This is a rice based off of Frutiger Ego, a subsection of the Frutiger family. The baseline for this project was : diinki-aero (huge thx for doing the hard part lmao)
-This also uses the infamous Hyprland Scrolling plugin, which of I have made hypr-keybinds on "https://gitlab.com/sayokimi/hypr-i3-binds"
+This also uses the infamous Hyprland Scrolling plugin, which of I have made i3 based binds on "https://gitlab.com/sayokimi/hypr-i3-binds"
 
 
 # !!! WARNING !!!
@@ -53,14 +53,14 @@ You can edit the keybinds in the hyprland config file as needed to match your pr
 
 - `MOD` is the super key/windows key by default in this config.
   - `MOD + Enter` = opens terminal (by default, kitty, you need to have it installed or edit the config file).
-  - `MOD + F` = Toggle maximize of a window
-  - `MOD + D` = Open the Wofi application launcher
-  - `MOD + E` = open the file explorer (you need caja, or edit the config file)
-  - `MOD + SHIFT + SPACE` = Toggle a window from tiling to floating.
-  - `MOD + mouse1 drag` = Move a window
+  - `MOD + R` = Launch wofi
+  - `MOD + D` = Resize the windows
+  - `MOD + E` = open the file explorer (you need nemo, or edit the config file)
+  - `MOD + G` = Toggle a window from tiling to floating.
+  - `Copilot Key` = Launch Brave
   - `MOD + mouse2 drag` = Resize a window
   - `MOD + Q` = Exit/Close an application
-  - `MOD + SHIFT + (n) = Move the window to a workspace with that ID.
+  - `MOD + SHIFT + (n)` = Move the window to a workspace with that ID.
 
 # Setup the hyprscrolling plugin
 
