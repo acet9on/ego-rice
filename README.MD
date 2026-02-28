@@ -19,8 +19,10 @@ You need to install the following dependencies on your system:
 - `wofi` the application launcher.
 - I use the `kitty` terminal too, but you do you.
 - Font used is MartianMono Nerd Font, which you can install with `nerdfonts`
+- GTK theme is `gtk-theme-windows-7` from the auro
+- Icon pack is a random one I made in oomox, you can definitely use the icon pack from diinki if you want
 
-On arch, you can install some of the above with `sudo pacman -S hyprland nemo waybar wofi kitty`, installing `eww` and `nerdfonts` has to
+On arch, you can install some of the above with `sudo pacman -S hyprland nemo waybar wofi kitty`, installing `eww` and `nerdfonts` `gtk-theme-windows-7` has to
 be done separately, easiest way is from the AUR with yay.
 
 To install, copy all the folders in the `config` directory, to the `~/.config` directory on your system; make sure to backup your previous configs if you have them.
@@ -28,14 +30,6 @@ To install, copy all the folders in the `config` directory, to the `~/.config` d
 The `.config` directory is where most applications will store their config files.
 
 You will need to make edits to config files, as not all configs are drag & drop, -which is fun that I have decided not to make it easy for you, so that you could learn :D-
-
-## GTK theme & Icon Pack 🖌️
-
-To install the icon theme, copy the folder in the icon theme directory to your `~/.local/share/icons` or `/usr/share/icons` directories
-and then set the theme to the one in use either with `gsettings` or the `nwg-look` applications; which you can download with most linux package managers.
-
-To install the GTK theme, copy the folder in the gtk theme directory to your `~/.themes` directory,
-and then set the GTK theme to "Windows-7-2.1" with either `gsettings` or the `nwg-look` application.
 
 # The Default Keybinds ⌨️
 
