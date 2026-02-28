@@ -8,6 +8,8 @@ This also uses the infamous Hyprland Scrolling plugin, which of I have made i3 b
 
 This uses the Slovakian keyboard, since I am based in Slovakia. In further intergration, I will make a script for installing and choosing the keyboard (but thats for the future) 
 
+my username is think - so if you find some errors with files not being right, look into the config, will fix in the future
+
 # Installation Steps 🖥️
 
 You need to install the following dependencies on your system:
