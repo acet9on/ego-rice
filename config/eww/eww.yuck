@@ -1,0 +1,90 @@
+(include "poweroff.yuck")
+
+(defwindow power
+  :monitor '["<primary>", 2, 1, 0]'
+  :windowtype "dock"
+  :stacking "fg"
+  :namespace "eww"
+  :geometry (geometry
+    :x "125px"
+    :y "3px"
+    :width "40px"
+    :height "30px"
+    :anchor "bottom left")
+  (power)
+)
+
+(defwindow search
+  :monitor '["<primary>", 2, 1, 0]'
+  :windowtype "dock"
+  :stacking "fg"
+  :namespace "eww"
+  :geometry (geometry
+    :x "15px"
+    :y "3px"
+    :width "100px"
+    :height "30px"
+    :anchor "bottom left")
+  (search)
+)
+
+(defwindow user
+  :monitor '["<primary>", 2, 1, 0]'
+  :windowtype "dock"
+  :stacking "fg"
+  :namespace "eww"
+  :geometry (geometry
+    :x "15px"
+    :y "40px"
+    :width "150px"
+    :height "30px"
+    :anchor "bottom left")
+  (user)
+)
+
+(defwindow pic
+  :monitor '["<primary>", 2, 1, 0]'
+  :windowtype "dock"
+  :stacking "fg"
+  :namespace "eww"
+  :geometry (geometry
+    :x "15px"
+    :y "75px"
+    :width "150px"
+    :height "150px"
+    :anchor "bottom left")
+  (pic)
+)
+
+
+(defwidget search []
+  (box :halign "center" :valign "center" :class "container" :spacing 5 :vexpand true :hexpand true
+    (button :onclick "wofi --show drun & killall eww &" :class "button" :width 100 :height 30
+      (label :text " Search" :class "Search")
+    )
+  )
+)
+
+(defwidget power []
+  (eventbox :height 34 :width 40 :class "container" :spacing 5 :vexpand true :hexpand true :cursor "pointer"
+    (button :onclick "~/.config/eww/scripts/poweroff.sh &" :class "button" :width 40 :height 30
+      (label :text "󰐥" :class "Power")
+    )
+  )
+)
+
+(defwidget user []
+  (box :height 30 :width 100 :class "container" :spacing 5 :vexpand true :hexpand true
+    (box :halign "center" :valign "center" :class "menu"
+      (label :text "Leopard" :class "User")
+    )
+  )
+)
+
+(defwidget pic []
+  (box :height 100 :width 100 :class "container" :spacing 5 :vexpand true :hexpand true
+    (box :halign "center" :valign "center" :class "menu"
+      (image :path "Images/Pictures.png" :image-width 110 :image-heigth 110)
+    )
+  )
+)

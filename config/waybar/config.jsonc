@@ -1,0 +1,88 @@
+{
+"layer": "bot",
+"spacing": 0,
+"height": 42,
+"margin-top": 0,
+"position": "bottom",
+"margin-right": 15,
+"margin-bottom": 8,
+"margin-left": 15,
+
+"modules-left": [
+  "custom/os_btn",
+  "hyprland/workspaces",
+],
+
+"modules-center": [
+],
+
+"modules-right": [
+"tray",
+"battery",
+"pulseaudio",
+"clock"
+],
+
+"hyprland/workspaces": {
+  "workspace-taskbar": {
+    "enable": true,
+    "update-active-window": true,
+    "format": "{icon}",
+    "icon-size": 20,
+    "orientation": "horizontal",
+    "on-click-window": "~/.config/waybar/focus-window.sh {address} {button}"
+  },
+  "format": "{icon} {windows}",
+  "persistent-workspaces": {
+     "*": 3,
+  },
+},
+
+"custom/os_btn": {
+  "format": " 󰣇 ",
+  "tooltip": false,
+  "on-click": "~/.config/eww/scripts/menu.sh",
+  "on-click-right": "~/.config/waybar/close-eww.sh",
+},
+
+"tray": {
+"spacing": 10,
+"tooltip": false
+},
+
+"clock": {
+"format": "{:%H:%M - %a | %d %b %Y}",
+"tooltip": false
+},
+
+"network": {
+"format-wifi" : "󰤢   {bandwidthDownBits}",
+"format-ethernet": "󰤢   {bandwidthDownBits}",
+"format-disconnected" : "󰤠   No Network",
+"interval": 5,
+"tooltip": false
+},
+
+"pulseaudio": {
+"scroll-step": 5,
+"max-volume": 150,
+"format": "{icon} {volume}%",
+"format-icons": ["", "", " "],
+"nospacing": 1,
+"format-muted": " ",
+"on-click": "pavucontrol",
+"tooltip": false
+},
+
+"battery": {
+"format": "{icon} {capacity}%",
+"interval": 5,
+"states": {
+"warning": 20,
+"critical": 10
+},
+
+"format-icons": ["", "", "", "", ""],
+"tooltip": false
+}
+}
