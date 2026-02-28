@@ -19,7 +19,7 @@ You need to install the following dependencies on your system:
 - `wofi` the application launcher.
 - I use the `kitty` terminal too, but you do you.
 
-On arch, you can install some of the above with `sudo pacman -S hyprland caja waybar wofi kitty`, installing `eww` has to
+On arch, you can install some of the above with `sudo pacman -S hyprland nemo waybar wofi kitty`, installing `eww` has to
 be done separately, easiest way is from the AUR with yay.
 
 To install, copy all the folders in the `config` directory, to the `~/.config` directory on your system; make sure to backup your previous configs if you have them.
