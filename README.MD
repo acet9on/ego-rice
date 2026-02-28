@@ -1,4 +1,4 @@
-# Frutiger ego
+# Frutiger ego /nordic?
 
 This is a rice based off of Frutiger Ego, a subsection of the Frutiger family. The baseline for this project was : diinki-aero (huge thx for doing the hard part lmao)
 This also uses the infamous Hyprland Scrolling plugin, which of I have made i3 based binds on "https://gitlab.com/sayokimi/hypr-i3-binds"
