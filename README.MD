@@ -29,16 +29,6 @@ The `.config` directory is where most applications will store their config files
 You will need to make edits to config files, as not all configs are drag & drop, the files are commented in
 order to help.
 
-## Weather Widget ☁️
-
-The weather widget uses `openweathermap.org` as a backend. They give you 2000 free api calls / day, which is more than enough.
-
-You need to create an account there, get an API key, and then edit
-the `eww/scripts/weather.sh` file with the following details. I've commented more specific instructions in that bash file.
-
-The bash file stores the weather data in `~/.cache/eww/weather` every time `weather.sh --getdata` is called; as such, I recommend creating a
-cronjob for calling `~/.config/eww/scripts/weather.sh --getdata` every 30 minutes.
-
 ## GTK theme & Icon Pack 🖌️
 
 To install the icon theme, copy the `crystal-remix-icon-theme-diinki-version` directory in `IconTRheme` to your `~/.local/share/icons` or `/usr/share/icons` directories
