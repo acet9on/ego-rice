@@ -42,19 +42,8 @@
   (user)
 )
 
-(defwindow pic
-  :monitor '["<primary>", 2, 1, 0]'
-  :windowtype "dock"
-  :stacking "fg"
-  :namespace "eww"
-  :geometry (geometry
-    :x "15px"
-    :y "75px"
-    :width "150px"
-    :height "150px"
-    :anchor "bottom left")
-  (pic)
-)
+(defwindow user_pic
+  :monitor 
 
 
 (defwidget search []
@@ -77,14 +66,9 @@
   (box :height 30 :width 100 :class "container" :spacing 5 :vexpand true :hexpand true
     (box :halign "center" :valign "center" :class "menu"
       (label :text "Leopard" :class "User")
+      (image :path 'Images/Pictures.png' :image-width 50 :image-height 50)
     )
   )
 )
 
-(defwidget pic []
-  (box :height 100 :width 100 :class "container" :spacing 5 :vexpand true :hexpand true
-    (box :halign "center" :valign "center" :class "menu"
-      (image :path "Images/Pictures.png" :image-width 110 :image-heigth 110)
-    )
-  )
-)
+

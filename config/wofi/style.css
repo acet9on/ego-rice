@@ -1,14 +1,14 @@
 * {
-  font-family: Noto Sans;
+  font-family: MartianMono Nerd Font;
   color: #ffffff;
   background: transparent;
   
 }
 
 #window {
+  margin: 50px;
   background: rgba(0,20,20,0.5);
-  border-radius: 9px;
-  margin: auto;
+  border-radius: 10px;
   padding: 12px;
 
   border-style: solid;
@@ -51,7 +51,7 @@
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.3)0%, rgba(20,20,20,0.2)50%, rgba(0,0,0,0.3)50%);
 }
 #entry:selected {
-  background-color: rgba(0,255,255,0.4);
+  background-color: rgba(129, 161, 193,0.4);
   outline: none;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
 }
