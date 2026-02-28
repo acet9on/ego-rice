@@ -1,10 +1,12 @@
-# Diinki Aero
+# Frutiger ego
 
-This is my frutiger aero themed rice, I will likely update it with time; so you can head over to the releases page for more concrete versions.
-I made a video of this rice, which you can watch here:
-https://www.youtube.com/watch?v=Tx9dHc0MyHs
+This is a rice based off of Frutiger Ego, a subsection of the Frutiger family. The baseline for this project was : diinki-aero (huge thx for doing the hard part lmao)
+This also uses the infamous Hyprland Scrolling plugin, which of I have made hypr-keybinds on "https://gitlab.com/sayokimi/hypr-i3-binds"
 
-![alt text](./wallpapers/aquarium.png)
+
+# !!! WARNING !!!
+
+This uses the Slovakian keyboard, since I am based in Slovakia. In further intergration, I will make a script for installing and choosing the keyboard (but thats for the future) 
 
 # Installation Steps 🖥️
 
@@ -12,10 +14,10 @@ You need to install the following dependencies on your system:
 
 - `eww` for widgets
 - `hyprland` the tiling window manager
-- `caja` the file explorer
+- `nemo` the file explorer
 - `waybar` the taskbar
 - `wofi` the application launcher.
-- I use the `kitty` terminal, but you can use whichever terminal emulator that you are comfortable with.
+- I use the `kitty` terminal too, but you do you.
 
 On arch, you can install some of the above with `sudo pacman -S hyprland caja waybar wofi kitty`, installing `eww` has to
 be done separately, easiest way is from the AUR with yay.
@@ -58,8 +60,48 @@ You can edit the keybinds in the hyprland config file as needed to match your pr
   - `MOD + mouse1 drag` = Move a window
   - `MOD + mouse2 drag` = Resize a window
   - `MOD + Q` = Exit/Close an application
-  - `MOD + SHIFT + (number, 1 to 9)` = Move the window to a workspace with that ID.
+  - `MOD + SHIFT + (n) = Move the window to a workspace with that ID.
 
-# Updates & Changes
+# Setup the hyprscrolling plugin
 
-Aspects and components of this rice will change with time, until I have a finalized design, I'll make specific releases on the github releases page.
+## This is what should be in the config
+```
+bind = Super, left, layoutmsg, move -col
+bind = Super, right, layoutmsg, move +col
+bind = Super, up, movefocus, u
+bind = Super, down, movefocus, d
+bind = Super Shift, left, layoutmsg, movewindowto l
+bind = Super Shift, right, layoutmsg, movewindowto r
+bind = Super Shift, up, layoutmsg, movewindowto u
+bind = Super Shift, down, layoutmsg, movewindowto d
+bind = Super, D, submap, resize
+submap = resize
+bind = , left, layoutmsg, colresize -conf
+bind = , right, layoutmsg, colresize +conf
+bind = , up, resizeactive, 0 -10
+bind = , down, resizeactive, 0 10
+bind = Super, D, submap, reset
+submap = reset
+plugin {
+    hyprscrolling {
+        explicit_column_widths = 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1,
+    }
+}
+```
+
+## Install hyprscrolling
+
+```
+hyprpm update
+hyprpm enable hyprscrolling
+```
+
+then to ~/.config/hypr/hyprland
+
+```
+general {
+    layout = scrolling
+}
+```
+
+# HUGE THANKS TO DIINKI-KOT AGAIN!
