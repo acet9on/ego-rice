@@ -26,16 +26,15 @@ To install, copy all the folders in the `config` directory, to the `~/.config` d
 
 The `.config` directory is where most applications will store their config files.
 
-You will need to make edits to config files, as not all configs are drag & drop, the files are commented in
-order to help.
+You will need to make edits to config files, as not all configs are drag & drop, -which is fun that I have decided not to make it easy for you, so that you could learn :D-
 
 ## GTK theme & Icon Pack 🖌️
 
-To install the icon theme, copy the `crystal-remix-icon-theme-diinki-version` directory in `IconTRheme` to your `~/.local/share/icons` or `/usr/share/icons` directories
-and then set the theme to the one in use either with `gsettings` or the `dconf` applications; which you can download with most linux package managers.
+To install the icon theme, copy the folder in the icon theme directory to your `~/.local/share/icons` or `/usr/share/icons` directories
+and then set the theme to the one in use either with `gsettings` or the `nwg-look` applications; which you can download with most linux package managers.
 
-To install the GTK theme, copy the `diinki-aero` folder in `GTKTheme` to your `~/.themes` directory,
-and then set the GTK theme to "diinki-aero" with either `gsettings` or the `dconf` application.
+To install the GTK theme, copy the folder in the gtk theme directory to your `~/.themes` directory,
+and then set the GTK theme to "Windows-7-2.1" with either `gsettings` or the `nwg-look` application.
 
 # The Default Keybinds ⌨️
 
@@ -44,13 +43,12 @@ You can edit the keybinds in the hyprland config file as needed to match your pr
 - `MOD` is the super key/windows key by default in this config.
   - `MOD + Enter` = opens terminal (by default, kitty, you need to have it installed or edit the config file).
   - `MOD + R` = Launch wofi
-  - `MOD + D` = Resize the windows
+  - `MOD + D` = Resize the windows with i3 binds (aka use arrow keys to resize height and width
   - `MOD + E` = open the file explorer (you need nemo, or edit the config file)
   - `MOD + G` = Toggle a window from tiling to floating.
   - `Copilot Key` = Launch Brave
-  - `MOD + mouse2 drag` = Resize a window
   - `MOD + Q` = Exit/Close an application
-  - `MOD + SHIFT + (n)` = Move the window to a workspace with that ID.
+  - `MOD + SHIFT + (n)` = Move the window to a workspace with that ID/Number.
 
 # Setup the hyprscrolling plugin
 
@@ -87,3 +85,4 @@ hyprpm enable hyprscrolling
 ```
 
 # HUGE THANKS TO DIINKI-KOT AGAIN!
+## Wallpapers are based off from unsplash.com - the respective authors names are on the name of the wallpaper : The SUNP0088.jpg was shot by me
