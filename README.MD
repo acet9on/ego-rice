@@ -86,12 +86,4 @@ hyprpm update
 hyprpm enable hyprscrolling
 ```
 
-then to ~/.config/hypr/hyprland
-
-```
-general {
-    layout = scrolling
-}
-```
-
 # HUGE THANKS TO DIINKI-KOT AGAIN!
